@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Sigmar One", cursive;
+}
+
+.container {
+  padding: 3% 5% 6%;
+}
+
+.pic1 {
+  width: 400px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+/* Download buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+@media screen and (max-width: 415px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  #title {
+    text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .container {
+    padding: 0;
+  }
+  .pic1 {
+    width: 100%;
+    position: static;
+    transform: rotate(0);
+  }
+  .download-button {
+    margin: auto;
+    border: 2px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  #title {
+    text-align: center;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .container {
+    padding: 0;
+  }
+  .pic1 {
+    width: 100%;
+    position: static;
+    transform: rotate(0);
+  }
+  .download-button {
+    margin: auto;
+    border: 2px;
+  }
+}
+
+/* Features */
+.card-wrapper {
+  column-gap: 8px;
+}
+
+.text-to {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+
+/* Testimonials */
+
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ff4c68;
+  color: white;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.pic2 {
+  border-radius: 500%;
+  width: 15%;
+  height: 20vh;
+  margin: 20px;
+}
+
+.testimonials {
+  font-family: "Anton", sans-serif;
+  font-size: 80px;
+}
+
+@media screen and (max-width: 454px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  #testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ff4c68;
+    color: white;
+  }
+
+  .testimonials {
+    font-size: 45px;
+    font-family: "Anton", sans-serif;
+  }
+}
+
+/* Press */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+#press {
+  background-color: #ff4c68;
+  text-align: center;
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.press-logo {
+  width: 70%;
+  margin: 15px 15px 50px;
+}
+
+/* Subscription */
+
+#pricing {
+  padding: 7% 15%;
+  padding-top: 10px;
+}
+
+/* CTA */
+
+#cta {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ff4c68;
+  color: white;
+}
+
+.cta-heading {
+  font-family: "Anton", sans-serif;
+  font-size: 100px;
+  line-height: 5px;
+}
+
+@media screen and (min-width: 419px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  button-ko {
+    margin: auto;
+    border: 2px;
+  }
+}
+
+/* Footer */
+
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
